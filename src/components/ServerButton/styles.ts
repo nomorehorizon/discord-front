@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { JoystickAlt } from 'styled-icons/boxicons-solid';
+
 import { Props } from '.';
 
 export const Button = styled.button<Props>`
@@ -14,15 +16,10 @@ export const Button = styled.button<Props>`
 
   margin-bottom: 8px;
 
-  background-color: ${props => props.isHome ? 'var(--rocketseat)' : 'var(--primary)'};
+  background-color: ${props => props.isHome ? '#7289DA' : 'var(--primary)'};
 
   position: relative;
   cursor: pointer;
-
-  > img {
-    width: 24px;
-    height: 24px;
-  }
 
   &::before {
     width: 9px;
@@ -67,6 +64,13 @@ export const Button = styled.button<Props>`
   *.active, 
   &:hover {
     border-radius: 16px;
-    background-color: ${props => props.isHome ? 'var(--rocketseat)' : 'var(--discord)'};
+    background-color: ${props => props.isHome ? '#7289DA' : 'var(--discord)'};
   }
+`;
+
+export const DiscordIcon = styled(JoystickAlt)`
+  width: 30px;
+  height: 30px;
+
+  color: #FFFFFF;
 `;
