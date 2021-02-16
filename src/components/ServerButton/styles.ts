@@ -16,7 +16,7 @@ export const Button = styled.button<Props>`
 
   margin-bottom: 8px;
 
-  background-color: ${props => props.isHome ? '#7289DA' : 'var(--primary)'};
+  background-color: ${props => props.isHome ? 'var(--discord)' : 'var(--primary)'};
 
   position: relative;
   cursor: pointer;
@@ -64,7 +64,7 @@ export const Button = styled.button<Props>`
   *.active, 
   &:hover {
     border-radius: 16px;
-    background-color: ${props => props.isHome ? '#7289DA' : 'var(--discord)'};
+    background-color: ${props => props.isHome ? 'var(--discord)' : 'var(--discord)'};
   }
 `;
 
